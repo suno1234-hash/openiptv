@@ -1,0 +1,40 @@
+{
+  "name": "OpenIPTV - IPTV Streaming Platform",
+  "short_name": "OpenIPTV",
+  "description": "Open-source IPTV streaming platform with channel management",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Favorites",
+      "short_name": "Favorites",
+      "description": "View your favorite channels",
+      "url": "/?filter=favorites",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "any"
+        }
+      ]
+    }
+  ],
+  "categories": ["entertainment", "video"],
+  "screenshots": []
+}

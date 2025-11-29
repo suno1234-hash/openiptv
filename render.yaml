@@ -1,0 +1,16 @@
+# Render.com Configuration
+# Connect your GitHub repo to Render and it will auto-detect this file
+
+services:
+  - type: web
+    name: openiptv
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"

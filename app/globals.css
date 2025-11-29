@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 262.1 83.3% 57.8%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 38.4 96.1% 50%;
+    --accent-foreground: 0 0% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 217.2 91.2% 59.8%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 262.1 83.3% 57.8%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 38.4 96.1% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Video.js custom styling */
+.video-js {
+  font-family: inherit;
+}
+
+.video-js .vjs-big-play-button {
+  border: none;
+  background-color: rgba(59, 130, 246, 0.9);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 48px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+.video-js .vjs-big-play-button:hover {
+  background-color: rgba(59, 130, 246, 1);
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted)) hsl(var(--background));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 5px;
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* iOS momentum scrolling */
+.scroll-smooth {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Full height containers */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Netflix-style animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Thin scrollbar for horizontal scroll */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-thumb-muted::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+.scrollbar-track-transparent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Video.js Netflix-style controls */
+.video-js .vjs-control-bar {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  height: 4em;
+  padding-top: 1em;
+}
+
+.video-js .vjs-progress-control {
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1em;
+}
+
+.video-js .vjs-progress-holder {
+  height: 4px;
+  margin: 0;
+}
+
+.video-js .vjs-progress-holder:hover {
+  height: 8px;
+}
+
+.video-js .vjs-play-progress {
+  background-color: hsl(var(--primary));
+}
+
+.video-js .vjs-load-progress {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hide Video.js elements we're replacing */
+.video-js .vjs-picture-in-picture-control {
+  display: none;
+}
